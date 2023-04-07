@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <title>Aboutus</title>
+    <style>
+      
+ .box-main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color:#03121e;
+   max-width: 50%;
+   margin: auto;
+   height: 80%;
+  }
+
+  
+  .text-big {
+   font-weight: bold;
+   font-size: 41px;
+   text-align: center;
+  }
+
+  .text-small {
+   font-size: 30px;
+   text-align: center;
+  }
+
+        .btn {
+             border: none;
+             background-color: inherit;
+            padding: 14px 28px;
+            font-size: 16px;
+            cursor: pointer;
+             display: inline-block;
+             color: white;
+            }
+
+
+        .btn:hover {background:#162938;}
+
+        .success {color: green;}
+        .info {color: dodgerblue;}
+        .warning {color: orange;}
+        .danger {color: red;}
+        .default {color: black;}
+  
+  .center {
+   text-align: center;
+            
+  }
+
+  header { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 2em;
+    color: #03121e;
+    user-select: none;  
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #03121e;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #03121e;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .btnAboutus-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #03121e;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #03121e;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navigation .btnAboutus-popup:hover {
+    background: #c5c2e6;
+    color: #03121e;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.2)url('360_F_259187667_nT2wKtTrzQrXBiKLrnlzkBhiqBrI5dVj.jpg') no-repeat;    
+    background-size: cover ;
+    background-position: center;
+    background-blend-mode: darken;
+}
+
+    </style>
+</head>
+<body>
+
+
+
+    <header>
+        <h2 class="logo">Brailleify</h2>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <button class="btnAboutus-popup">About us</button>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="#">Login</a>
+            
+        </nav>
+    </header>
+ <section class="background firstsection">
+  <div class="box-main">
+   <div class="firstHalf">
+    <p class="text-big">About US</p>
+    
+    <p class="text-small">
+     Through us, you can learn about the tool that can draw different shapes for the 3D printer that allows blind people to touch and feel the pictures.
+    </p>
+    <br>
+    <p class="center"><a href="#Order"
+    style="text-decoration:none;color:#162938;">
+                <button class="btn Learn more...">Learn more..</button></a>
+    </p>
+   </div>
+  </div>
+ </section>
+
+</body>
+
+</html>
